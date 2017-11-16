@@ -74,8 +74,10 @@ function onHidden(){
     statBlock.appendChild(visibleTime);
     statBlock.appendChild(adClick);
     document.body.append(statBlock);
+    changeStatistic();
 }()
 
 window.addEventListener("scroll", changeStatistic);
+window.addEventListener("resize", changeStatistic);
 adElement.addEventListener("click", clickTrack);
 
